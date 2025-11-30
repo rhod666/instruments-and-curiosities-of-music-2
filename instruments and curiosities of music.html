@@ -239,8 +239,30 @@
     electric guitar: the Rickenbacker "Frying Pan" in 1931. This metal-bodied instrument used
     an electromagnetic pickup to capture string vibrations.
   </p>
+<script>
+function checkURL() {
+  var url = window.location.href;
 
-            imagenes paginas instrumentos/fender logo.avif
+  // Main address
+  if (url === "http://instruments-and-curiosities-of-music.com") {
+    document.body.innerHTML += "<h2>Welcome to the main page!</h2>";
+  }
+  // Sub-address (imagenes paginas instrumentos/fender logo.avif)
+  else if (url === "http://instruments-and-curiosities-of-music.com/gallery") {
+    document.body.innerHTML += "<h2>Welcome to the Gallery!</h2>";
+  }
+  // Another sub-address (imagenes paginas instrumentos/fender logo.avif)
+  else if (url === "http://instruments-and-curiosities-of-music.com/about") {
+    document.body.innerHTML += "<h2>About Us</h2>";
+  }
+  // Else: any other address
+  else {
+    document.body.innerHTML += "<h2>imagenes paginas instrumentos/fender logo.avif.</h2>";
+  }
+}
+
+checkURL();
+</script>
   <p>
     In 1950, Leo Fender revolutionized the industry by creating the Broadcaster (later Telecaster),
     the first solid-body electric guitar with a detachable neck—improving durability and serviceability.
@@ -1410,4 +1432,5 @@ img {
 </body>
 
 </html>
+
 
